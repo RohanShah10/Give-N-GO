@@ -58,3 +58,43 @@ h6 {
   top: 0;
   z-index: 2;
 }
+
+.main-nav .container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  padding: 1rem;
+  align-items: center;
+}
+
+.main-nav .logo {
+  width: 180px;
+}
+
+.main-nav ul {
+  justify-self: end;
+  display: flex;
+}
+
+.main-nav ul li a {
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+.main-nav ul li a.current {
+  background: var(--primary_green);
+  color: #fff;
+}
+
+.main-nav ul li a:hover {
+  background: var(--primary_light);
+  color: var(--primary_red);
+}
+
+.main-nav .social {
+  justify-self: center;
+}
+
+.main-nav .social i {
+  color: #777;
+  margin-right: 0.5rem;
+}
